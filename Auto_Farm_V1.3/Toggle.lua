@@ -1,8 +1,8 @@
--- toggle button for mobile users.
-
 if game.CoreGui:FindFirstChild("Auto Farm V1.3 Toggle") then
 	return
 end
+
+local Gui = game.CoreGui:FindFirstChild("Auto Farm V1.3")
 
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "Auto Farm V1.3 Toggle"
@@ -26,11 +26,8 @@ TextButton.Text = "Close"
 TextButton.TextColor3 = Color3.fromRGB(139, 139, 139)
 TextButton.TextSize = 14
 TextButton.MouseButton1Click:Connect(function()
-	local Gui = game.CoreGui:FindFirstChild("Auto Farm V1.3")
-	if Gui then
-		Gui.Enabled = not Gui.Enabled
-		TextButton.Text = not Gui.Enabled and "Open" or "Close"
-	end
+	Gui.Enabled = not Gui.Enabled
+	TextButton.Text = not Gui.Enabled and "Open" or "Close"
 end)
 
 local UICorner = Instance.new("UICorner")
