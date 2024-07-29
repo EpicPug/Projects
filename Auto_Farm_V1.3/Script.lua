@@ -23,7 +23,7 @@ pcall(function()
 end);
 
 pcall(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EpicPug/Stuff/main/Low.lua'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EpicPug/Stuff/main/LowGfx.lua'))()
 end);
 
 pcall(function()
