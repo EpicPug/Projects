@@ -27,5 +27,5 @@ pcall(function()
 end);
 
 pcall(function()
-	setfpscap(getgenv().Settings["Fps"])
+	setfpscap(getgenv().Settings["fps"])
 end);
