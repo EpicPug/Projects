@@ -29,22 +29,3 @@ end);
 pcall(function()
 	setfpscap(getgenv().Settings["Fps"])
 end);
-
-getgenv().Config = {
-	["Mask"] = {
-		Name = '[Surgeon Mask] - $27',
-		Price = 27,
-		Tool = '[Mask]',
-		Equip = 'In-gameMask'
-	},
-
-	["Key"] = {
-		Name = '[Key] - $133',
-		Price = 133,
-		Tool = '[Key]'
-	},
-
-	["Pos"] = {
-		3.8, -625, -628
-	}
-};
