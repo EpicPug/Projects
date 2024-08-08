@@ -1,5 +1,5 @@
 if not game:IsLoaded() then
-	game.Loaded:Wait()
+	repeat task.wait(1) until game:IsLoaded()
 end;
 
 if game.PlaceId ~= 2788229376 then
